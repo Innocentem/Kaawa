@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="landing-page">
+    <div class="landing-container">
+        <div class="overlay">
+            <h1>Welcome to Kaawa</h1>
+            <p>Connecting Coffee Farmers and Buyers</p>
+            <a href="{{ url_for('main.register') }}" class="cta-button">Join Now</a>
+        </div>
+    </div>
+
+    <div class="about-container">
+        <h2>About Kaawa</h2>
+        <p>Kaawa is a platform designed to connect coffee farmers with buyers, creating a seamless marketplace for high-quality coffee. Our mission is to empower farmers by providing them with direct access to a global market and to offer buyers the opportunity to source premium coffee directly from the producers.</p>
+        <p>We believe in fair trade practices, sustainability, and fostering strong relationships between farmers and buyers. Join us in revolutionizing the coffee industry!</p>
+    </div>
+</div>
+{% endblock %}

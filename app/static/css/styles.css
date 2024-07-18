@@ -1,0 +1,161 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.landing-page {
+    background: url('../images/green_coffee.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.884);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.landing-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-container {
+    background-color: rgba(255, 255, 255, 0.466);
+    padding: 50px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #d4d4d4;
+    font-size: 1.2em;
+}
+
+.about-container h2 {
+    color: #4CAF50;
+    margin-top: 30px;
+}
+
+.about-container p {
+    color: #333;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgba(69, 160, 73, 0.8);
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #45A049;
+}
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard-container h2 {
+    margin-bottom: 20px;
+}
+
+.dashboard-container p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.farmer-dashboard, .buyer-dashboard {
+    margin-top: 20px;
+}
+
+.farmer-dashboard ul, .buyer-dashboard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.farmer-dashboard li, .buyer-dashboard li {
+    margin: 10px 0;
+}
+
+.farmer-dashboard a, .buyer-dashboard a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.farmer-dashboard a:hover, .buyer-dashboard a:hover {
+    text-decoration: underline;
+}

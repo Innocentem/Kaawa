@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard-container">
+    <h2>Welcome, {{ current_user.username }}!</h2>
+    <p>Email: {{ current_user.email }}</p>
+    <p>Account Type: {{ current_user.account_type }}</p>
+    
+    {% if current_user.account_type == 'farmer' %}
+    <div class="farmer-dashboard">
+        <h3>Farmer Dashboard</h3>
+        <ul>
+            <li><a href="{{ url_for('main.view_listings') }}">View Your Listings</a></li>
+            <li><a href="{{ url_for('main.add_listing') }}">Add New Listing</a></li>
+            <li><a href="{{ url_for('main.manage_orders') }}">Manage Orders</a></li>
+        </ul>
+    </div>
+    {% elif current_user.account_type == 'buyer' %}
+    <div class="buyer-dashboard">
+        <h3>Buyer Dashboard</h3>
+        <ul>
+            <li><a href="{{ url_for('main.browse_listings') }}">Browse Listings</a></li>
+            <li><a href="{{ url_for('main.your_orders') }}">Your Orders</a></li>
+            <li><a href="{{ url_for('main.favorite_farmers') }}">Favorite Farmers</a></li>
+        </ul>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Browse Listings</h2>
+<ul>
+    {% for listing in listings %}
+    <li>
+        <h3>{{ listing.title }}</h3>
+        <p>{{ listing.description }}</p>
+        <p>Price: ${{ listing.price }}</p>
+        <a href="{{ url_for('main.send_message', receiver_id=listing.farmer_id) }}">Contact Farmer</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
